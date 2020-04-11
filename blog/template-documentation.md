@@ -52,6 +52,11 @@ Apart form the default parameters, this template has several specific parameters
 - **`Subtitle`**: if specified it will show its contents under the title of the current page.
 - **`ShowMeta`**: if `true` it will show meta-information (date and time and author) under the current page's title. By default it's `false` and it's only enabled on blog posts.
 - **`Author`**: the name of the author of the current page.
+- **`imgsize`**: in a project file, indicates how to show the main image (`image`) inside the project list tiles. It can have the following values:
+  - **`cover`**: the default value. Covers all the available space in the thumbnail. Useful with photos.
+  - **`contain`**: fills the thumbnail, but maybe leaves some background areas visible.
+  - **`auto`**: uses the image's original size.
+- **`redirect`**: a URL to redirect when clicking the tile in the list of projects. If practice, the project file will never be reached from the project list. Useful to send to an external URL for an specific project.
 - **`ga-id`**: the Google Analytics ID. If set, the template will include the GA code to track visits.
 - **`robots`**: if specified it will add a robots meta-tag to the page. Usefull to prevent some pages to be indexed, using `robots: noindex,nofollow` in the FM.
 
