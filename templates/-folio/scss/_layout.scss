@@ -222,6 +222,8 @@
     }
 
     img:only-child {
+        display: block;
+        margin: auto;
         max-width: 100%;
     }
 }
@@ -354,6 +356,12 @@
 .right {
     float: right;
     margin-left: 1em;
+    margin-top: 0.5em;
+}
+
+.left {
+    float: left;
+    margin-right: 1em;
     margin-top: 0.5em;
 }
 
