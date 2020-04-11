@@ -1,0 +1,30 @@
+<meta name="generator" content="MIIS" />
+    {% if canonical %}<link rel="canonical" href="{{ canonical }}" />{% endif %}
+    <meta name="description" content="{{ description }}" />
+    <meta name="url" content="{{baseurl}}{{url}}" />
+    {%- if og-image -%}
+        {%- capture imgurl -%}{% if og-image contains '://' %}{{ og-image }}{% else %}{{baseurl}}{{dir}}{{ og-image }}{% endif %}{%- endcapture -%}
+    {%- elsif image -%}
+        {%- capture imgurl -%}{% if image contains '://' %}{{ image }}{% else %}{{baseurl}}{{dir}}{{ image }}{% endif %}{%- endcapture -%}
+    {%- endif -%}
+    {%- if imgurl -%}
+    <meta name="image" content="{{ imgurl | escape }}" />
+    {%- endif -%}
+
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="{{ title }}" />
+    <meta name="twitter:url" content="{{baseurl}}{{url}}" />
+    <meta name="twitter:description" content="{{ description }}" />
+    {%- if imgurl -%}
+    <meta name="twitter:image" content="{{ imgurl | escape }}" />
+    {%- endif -%}
+
+    <meta property="og:title" content="{{ Title }}" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="{{ lang.iso }}" />
+    <meta property="og:site_name" content="{{SiteTitle}}" />
+    <meta property="og:url" content="{{baseurl}}{{url}}" />
+    <meta property="og:description" content="{{ description}}" />
+    {%- if imgurl -%}
+    <meta property="og:image" content="{{ imgurl | escape }}" />
+    {%- endif -%}

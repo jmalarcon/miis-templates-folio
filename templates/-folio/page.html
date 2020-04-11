@@ -1,0 +1,19 @@
+---
+layout: base.html
+---
+
+<div class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">{{ Title }}</h1>
+    {% if Subtitle %}<h5 class="post-description">{{ Subtitle }}</h5>{% endif %}
+    {%- if ShowMeta -%}<p class="post-meta">{{ date | date: "f" }}{% if author %} • {{ author }}{% endif %}</p>{%- endif -%}
+  </header>
+
+  <article class="post-content">
+    {{ content }}
+    <hr />
+  </article>
+  {{ $includes/contacticons.html }}
+
+</div>

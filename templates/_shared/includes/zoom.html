@@ -1,0 +1,12 @@
+<!-- Zoom, pan and tooltip -->
+<link href="{{TemplateBaseFolder}}/../_shared/css/jquery.pan.css" rel="stylesheet">
+<script src="{{TemplateBaseFolder}}/../_shared/js/jquery.pan.min.js"></script>
+<script src="{{TemplateBaseFolder}}/../_shared/js/jquery.YACSSTooltip.min.js"></script>
+<script>
+    $(function(){
+        //Zoom & Pan
+        $('p > img:not(.noZoom)').pan(true);
+        //Tooltips
+        $('p > img').addTooltip();
+    });
+</script>

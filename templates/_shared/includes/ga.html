@@ -1,0 +1,12 @@
+{% if ga-id %}
+    <!-- change your GA id in web.config -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id={{ga-id}}"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', '{{ga-id}}', { 'anonymize_ip': true });
+    </script>
+{% endif %}

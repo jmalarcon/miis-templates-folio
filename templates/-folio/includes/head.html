@@ -1,0 +1,23 @@
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+
+    <title>{{ SiteTitle }} - {{ Title }}</title>
+    {%- if robots -%}
+    <meta name="robots"  content="{{robots}}" />
+    {%- endif -%}
+
+    <link rel="shortcut icon" href="~/favicon.ico?v=1.0"/>
+
+    {{ $../../_shared/includes/socialheaders.html }}
+
+    <link rel="stylesheet" href="{{templatebasefolder}}/css/main.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+    {{ $../../_shared/includes/jquery.html }}
+    {{ $../../_shared/includes/zoom.html }}
+
+    <!-- Google Analytics -->
+    {{$../../_shared/includes/ga.html}}
+    <!-- END Google Analytics -->
+</head>

@@ -1,0 +1,27 @@
+{
+  "name": "xit.xyz",
+  "version": "1.0.0",
+  "description": "Xitty tools",
+  "scripts": {
+    "prebuild:css": "rimraf ./templates/-folio/*.css",
+    "build:css": "node-sass --output-style compressed ./templates/-folio/scss -o ./templates/-folio/css",
+    "build:css:dev": "node-sass --output-style expanded ./templates/-folio/scss -o ./templates/-folio/css",
+    "build:css:watch": "node-sass --output-style expanded --watch ./templates/-folio/scss -o ./templates/-folio/css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jmalarcon/xit.xyz.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jmalarcon/xit.xyz/issues"
+  },
+  "homepage": "https://github.com/jmalarcon/xit.xyz#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "node-sass": "^4.13.1",
+    "rimraf": "^3.0.2"
+  }
+}

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+
+    {{ $includes/head.html }}
+
+  <body>
+
+    {{ nav }}
+
+    <div class="page-content">
+      <div class="wrapper">
+        {{ content }}
+      </div>
+    </div>
+
+    {{ $includes/footer.html }}
+
+    {{ $../_shared/includes/force-extlinks.html }}
+    {{ $../_shared/includes/highlight-code.html }}
+  </body>
+
+</html>

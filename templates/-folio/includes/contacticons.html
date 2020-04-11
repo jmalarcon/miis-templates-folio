@@ -1,0 +1,22 @@
+<span class="contacticon center">
+        {%- if email -%}
+        <a href="mailto:{{email}}"><i class="fa fa-envelope-square"></i></a>
+        {%- endif -%}
+        {%- if githubid -%}
+        <a href="https://github.com/{{githubid}}" target="_blank"><i class="fa fa-github-square"></i></a>
+        {%- endif -%}
+        {%- if linkedinid -%}
+        <a href="https://www.linkedin.com/in/{{linkedinid}}/" target="_blank"><i class="fa fa-linkedin-square"></i></a>
+        {%- endif -%}
+        {%- if youtubeid -%}
+        <a href="https://www.youtube.com/{{youtubeid}}" target="_blank"><i class="fa fa-youtube-square"></i></a>
+        {%- endif -%}
+        {%- if twitterid -%}
+        <a href="https://twitter.com/{{twitterid}}" target="_blank"><i class="fa fa-twitter-square"></i></a>
+        {%- endif -%}
+    </span>
+    {%- if ContactCaption -%}
+    <div class="col three caption">
+        {{ContactCaption}}
+    </div>
+    {%- endif -%}

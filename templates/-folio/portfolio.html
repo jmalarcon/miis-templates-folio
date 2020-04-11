@@ -1,0 +1,29 @@
+---
+layout: page.html
+---
+
+{{Content}}
+
+<div id="projects">
+    {%- for project in projects -%}
+    <div class="project">
+        <div class="thumbnail">
+            {%- if project.redirect -%}
+            <a href="{{ project.redirect }}" target="_blank">
+            {%- else -%}
+            <a href="{{ project.url_no_ext }}">
+            {%- endif -%}
+                <div class="thumbnail blankbox"
+            {% if project.image %}style="background-image: url({{ project.image }});background-size:{{project.imgsize}};"{% endif %}>
+                </div>
+                <span>
+                    <h1>{{ project.title }}</h1>
+                    <br/>
+                    <p>{{ project.description }}</p>
+                </span>
+            </a>
+        </div>
+    </div>
+{%- endfor -%}
+<div style="clear: both;"></div>
+</div>

@@ -1,0 +1,12 @@
+<!--
+        Make sure all external links open in a new tab
+        DEPENDENCY: jQuery
+    -->
+    <script>
+        $(function(){
+            $('a').filter(function() {
+                //Affects only links pointing to external URLs
+                return !this.href.startsWith('{{baseurl}}');
+            }).attr('target', '_blank');
+        });
+    </script>

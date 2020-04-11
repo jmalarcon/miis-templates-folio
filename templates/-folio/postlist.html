@@ -1,0 +1,25 @@
+---
+layout: base.html
+---
+
+<div class="header-bar">
+  <h1>{{Title}}</h1>
+  <h2>{{SubTitle}}</h2>
+  <hr />
+</div>
+
+<article class="post-content">
+    {{ content }}
+    <hr />
+<ul class="post-list">
+    {% for post in paginator.posts %}
+      <li>
+        <h2><a class="post-title" href="{{ post.url_no_ext }}">{{ post.title }}</a></h2>
+        <p class="post-meta">{{ post.date | date: 'f' }}{% if post.author %} • {{ post.author }}{% endif %}</p>
+        <p>{{ post.excerpt }}</p>
+        <hr/>
+      </li>
+    {% endfor %}
+</ul>
+
+</article>

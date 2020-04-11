@@ -1,0 +1,53 @@
+/** Variables **********************************************/
+$base-font-family: Helvetica, Arial, sans-serif;
+$base-font-size:   16px;
+$small-font-size:  $base-font-size * 0.875;
+$base-line-height: 1.5em;
+$horizontal-spacing-unit:       50px;
+$vertical-spacing-unit:         40px;
+$nav-height:                    56px;
+$spacing-unit:                  30px;
+$spacing-unit-small:            8px;
+
+/* portfolio tinkering */
+$img_spacing: 5px;
+$img_height: 275px;
+$caption_font_size: 12px;
+$caption_color:    #aaa;
+$text-color:       #111;
+$background-color: #fdfdfd;
+$brand-color:      #2a7ae2;
+
+/* For media queries */
+$on-phone:  425px;
+$on-tablet: 768px;
+$on-laptop: 1024px;
+
+
+/* COLORS  */
+$red:           #FF3636;
+$orange:        #F29105;
+$blue:          #2698BA;
+$green:         #11D68B;
+$lime_green:    #B7D12A;
+$purple:        #B509AC;
+$brown:         #A47D62;
+$brown-light:   #DA7733;
+$light-gray:    #ccc !default;
+
+$grey-color:        #828282;
+$grey-color-light:  lighten($grey-color, 40%);
+$grey-color-dark:   darken($grey-color, 25%);
+$text-color:        #666;
+
+/* Set theme color *************************/
+$theme-color:   $red;
+
+// Footer
+$footer-border-top: thin solid $grey-color-dark;
+$footer-padding: .5rem !default;
+$footer-color: $light-gray;
+$footer-bg-color: $grey-color-dark;
+$footer-font-weight: 300;
+$footer-font-size: .75rem;
+/************************************************************/
