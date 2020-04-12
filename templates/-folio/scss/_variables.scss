@@ -38,10 +38,9 @@ $light-gray:    #ccc !default;
 $grey-color:        #828282;
 $grey-color-light:  lighten($grey-color, 40%);
 $grey-color-dark:   darken($grey-color, 25%);
-$text-color:        #666;
 
 /* Set theme color *************************/
-$theme-color:   $red;
+$theme-color:   $brown-light;
 
 // Footer
 $footer-border-top: thin solid $grey-color-dark;
